@@ -5,7 +5,7 @@ import { useAuthProvider } from "../context/AuthProvider";
 interface LoginPageProps {}
 
 const LoginPage: React.FunctionComponent<LoginPageProps> = () => {
-  const { signUp, user } = useAuthProvider();
+  const { signUp } = useAuthProvider();
 
   // use-states
   const [input, setInput] = React.useState({
@@ -20,8 +20,8 @@ const LoginPage: React.FunctionComponent<LoginPageProps> = () => {
     });
 
   const onSubmitHandler = (e: any) => {
-    signUp(input.username).then((userData) => {
-      
+    signUp("cjlaiya.sln2@gmail.com").then((userData) => {
+
     });
   };
 
